@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="rrT-mh-4Ta">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Switch Control-->
+        <scene sceneID="tsj-7f-JRQ">
+            <objects>
+                <viewController storyboardIdentifier="SwitchControlViewController" id="rrT-mh-4Ta" customClass="SwitchControlViewController" customModule="PlayRxSwift" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Lg9-i8-meq">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WcX-9G-hOb">
+                                <rect key="frame" x="163" y="60" width="51" height="31"/>
+                            </switch>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="WcX-9G-hOb" firstAttribute="centerX" secondItem="Lg9-i8-meq" secondAttribute="centerX" id="TcR-dm-faK"/>
+                            <constraint firstItem="WcX-9G-hOb" firstAttribute="top" secondItem="e9Q-7C-zYs" secondAttribute="top" constant="40" id="YRV-TR-hQ6"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="e9Q-7C-zYs"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Switch Control" id="k4m-ma-dR6"/>
+                    <connections>
+                        <outlet property="toggleSwitch" destination="WcX-9G-hOb" id="Mpv-6l-H8u"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4qL-EG-yjT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="7" y="128"/>
+        </scene>
+    </scenes>
+</document>
